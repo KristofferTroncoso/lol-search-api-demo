@@ -3,35 +3,77 @@
 
 <main class="wrapper">
     <% var proficonurl = "http://ddragon.leagueoflegends.com/cdn/8.4.1/img/profileicon/" + summ.profileIconId + ".png" %>
-    <img src="<%=proficonurl%>">
-    <h1><%= summ.name %></h1>
     
-    <table>
-        <tr>
-            <td>Summoner name:</td>
-            <td><%= summ.name %></td>
-        </tr>
-        <tr>
-            <td>Summoner id:</td>
-            <td><%= summ.id %></td>
-        </tr>
-        <tr>
-            <td>Summoner summonerLevel:</td>
-            <td><%= summ.summonerLevel %></td>
-        </tr>
-        <tr>
-            <td>Summoner accountId:</td>
-            <td><%= summ.accountId %></td>
-        </tr>
-        <tr>
-            <td>Summoner profileIconId:</td>
-            <td><%= summ.profileIconId %></td>
-        </tr>
-        <tr>
-            <td>Summoner revisionDate:</td>
-            <td><%= summ.revisionDate %></td>
-        </tr>
-    </table>
+    <div class="summonertitle">
+        <img src="<%=proficonurl%>">
+        <h1><%= summ.name %></h1>        
+    </div>
+    
+    <div class="tables">
+        <table>
+            <tr>
+                <th>Summoner-V3</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>name:</td>
+                <td><%= summ.name %></td>
+            </tr>
+            <tr>
+                <td>id:</td>
+                <td><%= summ.id %></td>
+            </tr>
+            <tr>
+                <td>summonerLevel:</td>
+                <td><%= summ.summonerLevel %></td>
+            </tr>
+            <tr>
+                <td>accountId:</td>
+                <td><%= summ.accountId %></td>
+            </tr>
+            <tr>
+                <td>profileIconId:</td>
+                <td><%= summ.profileIconId %></td>
+            </tr>
+            <tr>
+                <td>revisionDate:</td>
+                <td><%= summ.revisionDate %></td>
+            </tr>
+        </table>
+        
+        
+        <table>
+            <tr>
+                <th>Summoner-V3</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>name:</td>
+                <td><%= summ.name %></td>
+            </tr>
+            <tr>
+                <td>id:</td>
+                <td><%= summ.id %></td>
+            </tr>
+            <tr>
+                <td>summonerLevel:</td>
+                <td><%= summ.summonerLevel %></td>
+            </tr>
+            <tr>
+                <td>accountId:</td>
+                <td><%= summ.accountId %></td>
+            </tr>
+            <tr>
+                <td>profileIconId:</td>
+                <td><%= summ.profileIconId %></td>
+            </tr>
+            <tr>
+                <td>revisionDate:</td>
+                <td><%= summ.revisionDate %></td>
+            </tr>
+        </table>
+    </div>
+    
     
   
 </main>

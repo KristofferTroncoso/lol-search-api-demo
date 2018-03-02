@@ -15,6 +15,8 @@ a:hover {
 
 img {
     height: 150px;
+    width: 150px;
+    border: 6px solid gold;
 }
 
 header {
@@ -40,9 +42,23 @@ header h1 {
     margin: 0 auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+    .summonertitle {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 1em;
+    }
+    
     header div {
         flex-direction: column;
+    }
+    
+    .tables {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -56,15 +72,41 @@ form {
 }
 
 #q {
-    width: 200px;
+    width: 300px;
+}
+
+.submit {
+    background: white;
+    color: purple;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
 }
 
 main {
     padding: 20px 20px;
 }
 
+.summonertitle {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    font-style: italic;
+    font-size: 3rem;
+    color: #ff2600;
+}
+
+table {
+    margin: 5px 20px;
+}
 
 table * {
     background: pink;
     border: 2px solid white;
+    padding: 2px 10px;
 }
+
+.tables {
+    display: flex;
+}
+
