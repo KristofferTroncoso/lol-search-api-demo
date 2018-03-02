@@ -2,20 +2,17 @@
         
         
         
+<% var proficonurl = "http://ddragon.leagueoflegends.com/cdn/8.4.1/img/profileicon/" + summ.profileIconId + ".png" %>
+<img src="<%=proficonurl%>">
+<h1><%= summ.name %></h1>
+<ul>
+    <li>Summoner name: <%= summ.name %></li>
+    <li>Summoner id: <%= summ.id %></li>
+    <li>Summoner summonerLevel: <%= summ.summonerLevel %></li>
+    <li>Summoner accountId: <%= summ.accountId %></li> 
+    <li>Summoner profileIconId: <%= summ.profileIconId %></li>
+    <li>Summoner revisionDate: <%= summ.revisionDate %></li> 
+</ul>
         
-        
-        
-        <% var proficonurl = "http://ddragon.leagueoflegends.com/cdn/8.4.1/img/profileicon/" + summ.profileIconId + ".png" %>
-        <img src="<%=proficonurl%>">
-        <h1><%= summ.name %></h1>
-        <ul>
-            <li>Summoner name: <%= summ.name %></li>
-            <li>Summoner id: <%= summ.id %></li>
-            <li>Summoner summonerLevel: <%= summ.summonerLevel %></li>
-            <li>Summoner accountId: <%= summ.accountId %></li> 
-            <li>Summoner profileIconId: <%= summ.profileIconId %></li>
-            <li>Summoner revisionDate: <%= summ.revisionDate %></li> 
-        </ul>
-        
-    </body>
-</html>
+
+<% include partials/footer.ejs %>
