@@ -1,3 +1,7 @@
+* {
+    /*border: 1px solid black;*/
+}
+
 body {
     background: #f1f1f1;
     font-family: 'Roboto', sans-serif;
@@ -60,6 +64,8 @@ header h1 {
         flex-direction: column;
         align-items: center;
     }
+    
+
 }
 
 h1 {
@@ -89,11 +95,20 @@ main {
 
 .summonertitle {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px 0;
     font-style: italic;
     font-size: 3rem;
     color: #ff2600;
+}
+
+.summonertitle h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.summonertitle * {
+    margin: 0 10px;
 }
 
 table {
