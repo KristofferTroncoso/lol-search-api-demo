@@ -24,6 +24,8 @@ app.get('/:summonername', function(req, res) {
         if (!error && response.statusCode === 200) {
             var summ = JSON.parse(body);
             res.render('summoner', {summ: summ});
+        } else {
+            res.send("summoner not found");
         }
     });
 });
