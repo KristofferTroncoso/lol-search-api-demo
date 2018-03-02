@@ -5,18 +5,34 @@
 
 body {
     font-family: sans-serif;
-    background: pink;
+    background: #f1f1f1;
     margin: 0 auto;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: red;
+    background: #ff2600;
     color: white;
-    
+    height: 80px;
 }
 
+h1 {
+    padding: 0 20px;
+}
 
+form {
+    padding: 0 20px;
+    margin: 0;
+}
+
+#q {
+    width: 400px;
+}
