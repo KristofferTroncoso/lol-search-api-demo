@@ -1,12 +1,5 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
 body {
-    font-family: sans-serif;
     background: #f1f1f1;
-    margin: 0 auto;
 }
 
 a {
@@ -24,7 +17,13 @@ header {
     align-items: center;
     background: #ff2600;
     color: white;
-    height: 80px;
+    padding: 20px 0;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
 }
 
 h1 {
@@ -36,13 +35,14 @@ form {
     margin: 0;
 }
 
+#q {
+    width: 200px;
+}
+
 main {
     padding: 20px 20px;
 }
 
-#q {
-    width: 400px;
-}
 
 table * {
     border: 1px solid pink;
