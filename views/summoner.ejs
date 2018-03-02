@@ -1,18 +1,41 @@
 <% include partials/header.ejs %>
         
-        
-        
-<% var proficonurl = "http://ddragon.leagueoflegends.com/cdn/8.4.1/img/profileicon/" + summ.profileIconId + ".png" %>
-<img src="<%=proficonurl%>">
-<h1><%= summ.name %></h1>
-<ul>
-    <li>Summoner name: <%= summ.name %></li>
-    <li>Summoner id: <%= summ.id %></li>
-    <li>Summoner summonerLevel: <%= summ.summonerLevel %></li>
-    <li>Summoner accountId: <%= summ.accountId %></li> 
-    <li>Summoner profileIconId: <%= summ.profileIconId %></li>
-    <li>Summoner revisionDate: <%= summ.revisionDate %></li> 
-</ul>
+
+<main>
+    <% var proficonurl = "http://ddragon.leagueoflegends.com/cdn/8.4.1/img/profileicon/" + summ.profileIconId + ".png" %>
+    <img src="<%=proficonurl%>">
+    <h1><%= summ.name %></h1>
+    
+    <table>
+        <tr>
+            <td>Summoner name:</td>
+            <td><%= summ.name %></td>
+        </tr>
+        <tr>
+            <td>Summoner id:</td>
+            <td><%= summ.id %></td>
+        </tr>
+        <tr>
+            <td>Summoner summonerLevel:</td>
+            <td><%= summ.summonerLevel %></td>
+        </tr>
+        <tr>
+            <td>Summoner accountId:</td>
+            <td><%= summ.accountId %></td>
+        </tr>
+        <tr>
+            <td>Summoner profileIconId:</td>
+            <td><%= summ.profileIconId %></td>
+        </tr>
+        <tr>
+            <td>Summoner revisionDate:</td>
+            <td><%= summ.revisionDate %></td>
+        </tr>
+    </table>
+    
+  
+</main>
+
         
 
 <% include partials/footer.ejs %>

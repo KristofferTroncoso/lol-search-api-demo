@@ -7,12 +7,15 @@ body {
     font-family: sans-serif;
     background: #f1f1f1;
     margin: 0 auto;
-    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+img {
+    height: 150px;
 }
 
 header {
@@ -33,6 +36,15 @@ form {
     margin: 0;
 }
 
+main {
+    padding: 20px 20px;
+}
+
 #q {
     width: 400px;
+}
+
+table * {
+    border: 1px solid pink;
+    background: pink;
 }
