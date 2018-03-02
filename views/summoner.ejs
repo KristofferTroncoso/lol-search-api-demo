@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <title>LoLDex</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+        
+        
+            body {
+                font-family: sans-serif;
+                background: pink;
+                width: 400px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+            img {
+                width: 130px;
+                border-radius: 10px;
+                border: 8px solid teal;
+            }
+            
+            h1 {
+                color: magenta;
+            }
+            
+            ul {
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>LoLDex</h1>
+        <h2>Search for a summoner!</h2>
+        
+        <% var proficonurl = "http://ddragon.leagueoflegends.com/cdn/8.4.1/img/profileicon/" + summ.profileIconId + ".png" %>
+        <img src="<%=proficonurl%>">
+        <h1><%= summ.name %></h1>
+        <ul>
+            <li>Summoner name: <%= summ.name %></li>
+            <li>Summoner id: <%= summ.id %></li>
+            <li>Summoner summonerLevel: <%= summ.summonerLevel %></li>
+            <li>Summoner accountId: <%= summ.accountId %></li> 
+            <li>Summoner profileIconId: <%= summ.profileIconId %></li>
+            <li>Summoner revisionDate: <%= summ.revisionDate %></li> 
+        </ul>
+        
+    </body>
+</html>

@@ -1,0 +1,25 @@
+const express = require('express');
+const app = express();
+const ejs = require('ejs');
+const request = require('request');
+const apikey = require('./apikey');
+
+app.set('view engine', 'ejs');
+
+app.get('/', function(req, res) {
+    res.render('index');
+});
+
+app.get('/:summonername', function(req, res) {
+    var summonername = req.params.summonername;
+    request('https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/' + summonername + '?api_key=' + apikey, function(error, response, body) {
+        if (!error && response.statusCode === 200) {
+            var summ = JSON.parse(body);
+            res.render('summoner', {summ: summ});
+        }
+    });
+});
+
+app.listen(process.env.PORT, function() {
+    console.log('server started!');
+});
