@@ -1,10 +1,16 @@
 body {
     background: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    text-decoration: inherit;
+    color: skyblue;
 }
 
 img {
@@ -17,7 +23,12 @@ header {
     align-items: center;
     background: #ff2600;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 3rem;
 }
 
 @media (max-width: 700px) {
@@ -45,6 +56,6 @@ main {
 
 
 table * {
-    border: 1px solid pink;
     background: pink;
+    border: 2px solid white;
 }
