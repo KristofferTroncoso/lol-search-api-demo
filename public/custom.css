@@ -116,20 +116,17 @@ main {
 .summonertitle {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 15px 0;
     font-style: italic;
     font-size: 3rem;
     color: #ff2600;
 }
 
 .summonertitle h1 {
-    width: 100%;
+    width: 80%;
     text-align: center;
 }
 
-.summonertitle * {
-    margin: 0 10px;
-}
 
 table {
     margin: 5px 20px;
