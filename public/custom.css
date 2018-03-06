@@ -23,6 +23,10 @@ img {
     border: 6px solid gold;
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
 header {
     background: #ff2600;
     color: white;
