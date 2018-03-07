@@ -23,7 +23,14 @@ app.get('/:summonername', function(req, res) {
     request('https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/' + summonername + '?api_key=' + apikey, function(error, response, body) {
         if (!error && response.statusCode === 200) {
             var summ = JSON.parse(body);
-            res.render('summoner', {summ: summ});
+            request('https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/' + summ.id + '?api_key=' + apikey, function(error, response, body) {
+                if (!error && response.statusCode === 200) {
+                    var league = JSON.parse(body);
+                    res.render('summoner', {summ: summ, league: league});
+                } else {
+                    res.send("summoner id not found");
+                }
+            });
         } else {
             res.send("summoner not found");
         }
