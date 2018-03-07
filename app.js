@@ -28,7 +28,7 @@ app.get('/:summonername', function(req, res) {
                     var league = JSON.parse(body);
                     res.render('summoner', {summ: summ, league: league});
                 } else {
-                    res.send("summoner id not found");
+                    res.send("summoner not found");
                 }
             });
         } else {
