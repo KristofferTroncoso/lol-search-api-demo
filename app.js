@@ -18,6 +18,11 @@ app.post('/', function(req, res) {
     res.redirect('/' + q);
 });
 
+//just an easter egg
+app.get('/rhea', function(req, res) {
+    res.render('rhea');
+});
+
 app.get('/:summonername', function(req, res) {
     var summonername = req.params.summonername;
     request('https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/' + summonername + '?api_key=' + apikey, function(error, response, body) {
