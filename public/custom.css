@@ -38,6 +38,12 @@ img {
     }
 }
 
+@keyframes animate-opaque {
+    100% {
+        opacity: 1;
+    }
+}
+
 img:active {
     transform: rotate(1080deg);
     transition: transform 4s linear;
@@ -131,6 +137,8 @@ input[type=submit] {
 
 main {
     padding: 20px 20px;
+    opacity: 0;
+    animation: 1s animate-opaque linear forwards;
 }
 
 .summonertitle {
