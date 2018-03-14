@@ -25,6 +25,22 @@ img {
     height: 150px;
     width: 150px;
     border: 6px solid gold;
+    margin-right: 200px;
+    opacity: 0;
+    animation: rotato 0.5s linear forwards;
+}
+
+@keyframes rotato {
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+
+img:active {
+    transform: rotate(1080deg);
+    transition: transform 4s linear;
 }
 
 .img-circle {
