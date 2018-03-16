@@ -1,7 +1,16 @@
 <% include partials/head.ejs %>
-<% include partials/navbar.ejs %>
-        
 
+        
+<div class="hero">
+    <div class="wrapper">
+        <h1><a href="/">LoL Search API Demo</a></h1>
+        <form action="/" method="POST">
+            <label for="q">
+            <input type="search" id="q" name="q" placeholder="Summoner Name">
+            <input class="submit" type="submit">
+        </form> 
+    </div>
+</div>
 
 
 <% include partials/footer.ejs %>
