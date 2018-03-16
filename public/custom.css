@@ -44,9 +44,9 @@ img {
     }
 }
 
-img:active {
-    transform: rotate(1080deg);
-    transition: transform 4s linear;
+img:hover {
+    border-radius: 0;
+    transition: border-radius 2s linear;
 }
 
 .img-circle {
