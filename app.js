@@ -23,7 +23,7 @@ app.get('/rhea', function(req, res) {
     res.render('rhea');
 });
 
-app.get('/:summonername', function(req, res) {
+app.get('/:summonername([/^A-Za-z0-9/]{3,16})', function(req, res) {
     var summonername = req.params.summonername;
     request('https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/' + summonername + '?api_key=' + apikey, function(error, response, body) {
         if (!error && response.statusCode === 200) {
