@@ -42,6 +42,11 @@ app.get('/:summonername([/^A-Za-z0-9/]{3,16})', function(req, res) {
     });
 });
 
+
+app.get('*', function(req, res){
+    res.render('404');
+});
+
 app.listen(process.env.PORT, function() {
     console.log('server started!');
 });
